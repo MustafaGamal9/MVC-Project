@@ -12,7 +12,7 @@ namespace MVC_Project
             builder.Services.AddControllersWithViews();
 
 
-            builder.Services.AddDbContext<ApplDbContext>(options =>
+            builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("AppDbContext"))
             );
 

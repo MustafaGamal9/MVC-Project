@@ -1,0 +1,21 @@
+﻿@using MVC_Project.Models
+@{
+    ViewData["Title"] = "Categories details";
+}
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>@Model.Name</td>
+                <td>@Model.Description</td>
+            </tr>
+    </tbody>
+</table>
