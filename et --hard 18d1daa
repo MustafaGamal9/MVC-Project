@@ -1,0 +1,12 @@
+[33md01b43f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: commit: Category CRUD / Views
+[33m18ab70d[m HEAD@{1}: reset: moving to HEAD~1
+[33m18d1daa[m HEAD@{2}: commit: Category CRUD / Views
+[33m18ab70d[m HEAD@{3}: reset: moving to Head~1
+[33m783dfe2[m HEAD@{4}: commit: Fix
+[33m18ab70d[m HEAD@{5}: commit: Controllers/Views
+[33mb74fd26[m HEAD@{6}: commit: Added multiplicity between models / testing sql diagram
+[33ma509afd[m HEAD@{7}: commit: Added Models
+[33me44b8f7[m HEAD@{8}: reset: moving to Head~1
+[33md13017e[m HEAD@{9}: commit: Added Models
+[33me44b8f7[m HEAD@{10}: Branch: renamed refs/heads/master to refs/heads/main
+[33me44b8f7[m HEAD@{12}: commit (initial): init commit

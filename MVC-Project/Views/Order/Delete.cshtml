@@ -1,0 +1,38 @@
+﻿@model MVC_Project.Models.Order
+
+@{
+    ViewData["Title"] = "Delete Order";
+}
+
+<dl>
+    <dt>
+        @Html.DisplayNameFor(model => model.Customer)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.Customer.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.OrderDate)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.OrderDate)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.TotalAmount)
+    </dt>
+
+    <dd>
+        @Html.DisplayFor(model => model.TotalAmount)
+    </dd>
+
+</dl>
+
+<form asp-action="Delete">
+
+    <input type="submit" value="Delete"/>
+
+</form>
