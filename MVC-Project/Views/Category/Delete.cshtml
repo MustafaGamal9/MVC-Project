@@ -1,0 +1,26 @@
+﻿@model MVC_Project.Models.Category
+
+@{
+    ViewData["Title"] = "Delete Category";
+}
+
+<dl>
+        <dt >
+            @Html.DisplayNameFor(model => model.Name) <!--html helper-->
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+</dl>
+
+<form asp-action="Delete">
+     
+     <input type="submit" value="Delete"/> 
+     
+</form>

@@ -1,0 +1,24 @@
+﻿@model MVC_Project.Models.ViewModels.OrderVM
+@{
+    ViewData["Title"] = "Orders";
+}
+
+<table>
+    <thead>
+      <tr>
+          <th>Order Date</th>
+          <th>Customer</th>
+          <th>Total Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach (var o in Model.Orders)
+        {
+         <tr>
+             <td>@o.OrderDate</td>
+             <td>@o.Customer.Name</td>
+             <td>@o.TotalAmount</td>
+         </tr>
+        }
+    </tbody>
+</table>

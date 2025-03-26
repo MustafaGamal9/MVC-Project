@@ -1,0 +1,22 @@
+﻿@model MVC_Project.Models.ViewModels.ProductVM
+@{
+    ViewData["Title"] = "Products";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>

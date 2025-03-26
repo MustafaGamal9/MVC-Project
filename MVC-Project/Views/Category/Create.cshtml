@@ -1,0 +1,25 @@
+﻿@model MVC_Project.Models.Category
+
+@{
+    ViewData["Title"] = "Create Category";
+}
+ <form asp-action="Create"> <!--Tag helper-->
+     <div asp-validation-summary="ModelOnly"></div> <!--Validation-->
+
+        <div>
+              <label asp-for="Name"></label>
+              <input asp-for="Name"/>
+              <span asp-validation-for="Name"></span>
+        </div>
+
+         <div>
+              <label asp-for="Description"></label>
+              <input asp-for="Description"/>
+              <span asp-validation-for="Description"></span>
+          </div>
+
+         <div>
+              <input type="submit" value="Create"/>
+          </div>
+
+ </form>

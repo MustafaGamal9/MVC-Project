@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MVC_Project.Migrations
 {
-    [DbContext(typeof(ApplDbContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20250311193909_init")]
     partial class init
     {

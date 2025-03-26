@@ -1,0 +1,32 @@
+﻿@model MVC_Project.Models.ViewModels.OrderDetailsVM
+@{
+ViewData["Title"] = "Order Details";
+}
+
+<div>
+    <p>Order Date: @Model.Order.OrderDate</p>
+    <p>Customer: @Model.Order.Customer.Name</p>
+    <p>Total Amount: @Model.Order.TotalAmount</p>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Order.OrderItems)
+        {
+           <tr>
+               <td>@item.Product.Name</td>
+               <td>@item.Quantity</td>
+               <td>@item.Price</td>
+               <td>@(item.Quantity * item.Price)</td>
+           </tr>
+        }
+    </tbody>
+</table>

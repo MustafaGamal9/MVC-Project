@@ -1,0 +1,22 @@
+﻿@using MVC_Project.Models
+@{
+ViewData["Title"] = "Categories";
+}
+
+
+<table>
+    <thead>
+        <tr><th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cat in ViewData["Categories"] as List<Category>)
+        {
+            <tr>
+                <td>@cat.Name</td>
+                <td>@cat.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
